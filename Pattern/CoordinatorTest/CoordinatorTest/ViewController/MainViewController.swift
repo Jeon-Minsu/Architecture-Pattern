@@ -34,7 +34,9 @@ class MainViewController: UIViewController {
         return seg
     }()
     
-    weak var coordinator: MainCoordinator?
+    // concrete type이 아닌 프로토콜 참조 가능
+    // 클로저를 사용하면 coordinator 자체를 없앨 수도 있음!
+    weak var coordinator: (Red & Blue)?
     
     override func viewDidLoad() {
         super.viewDidLoad()

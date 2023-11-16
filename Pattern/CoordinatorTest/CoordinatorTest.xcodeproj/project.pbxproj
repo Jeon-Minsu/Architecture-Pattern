@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		200D639C2B05979C0045A5C1 /* RedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D639B2B05979C0045A5C1 /* RedCoordinator.swift */; };
+		200D639F2B05B1480045A5C1 /* Red.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D639E2B05B1480045A5C1 /* Red.swift */; };
+		200D63A12B05B1810045A5C1 /* Blue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D63A02B05B1810045A5C1 /* Blue.swift */; };
 		201DBF892B049BC2004FEF5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201DBF882B049BC2004FEF5A /* AppDelegate.swift */; };
 		201DBF8B2B049BC2004FEF5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201DBF8A2B049BC2004FEF5A /* SceneDelegate.swift */; };
 		201DBF8D2B049BC2004FEF5A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201DBF8C2B049BC2004FEF5A /* MainViewController.swift */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		200D639B2B05979C0045A5C1 /* RedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedCoordinator.swift; sourceTree = "<group>"; };
+		200D639E2B05B1480045A5C1 /* Red.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Red.swift; sourceTree = "<group>"; };
+		200D63A02B05B1810045A5C1 /* Blue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blue.swift; sourceTree = "<group>"; };
 		201DBF852B049BC2004FEF5A /* CoordinatorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		201DBF882B049BC2004FEF5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		201DBF8A2B049BC2004FEF5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,11 +114,20 @@
 		200D639A2B0597890045A5C1 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				201DBFB82B049BF7004FEF5A /* Coordinator.swift */,
 				201DBFBA2B049F1B004FEF5A /* MainCoordinator.swift */,
 				200D639B2B05979C0045A5C1 /* RedCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		200D639D2B05B1380045A5C1 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				201DBFB82B049BF7004FEF5A /* Coordinator.swift */,
+				200D639E2B05B1480045A5C1 /* Red.swift */,
+				200D63A02B05B1810045A5C1 /* Blue.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		201DBF7C2B049BC2004FEF5A = {
@@ -140,6 +153,7 @@
 			children = (
 				200D63972B05975E0045A5C1 /* Application */,
 				200D63982B05976B0045A5C1 /* Resource */,
+				200D639D2B05B1380045A5C1 /* Protocol */,
 				200D639A2B0597890045A5C1 /* Coordinator */,
 				200D63992B0597820045A5C1 /* ViewController */,
 			);
@@ -283,7 +297,9 @@
 				201DBFBB2B049F1B004FEF5A /* MainCoordinator.swift in Sources */,
 				201DBF8B2B049BC2004FEF5A /* SceneDelegate.swift in Sources */,
 				200D639C2B05979C0045A5C1 /* RedCoordinator.swift in Sources */,
+				200D63A12B05B1810045A5C1 /* Blue.swift in Sources */,
 				201DBFBD2B04A29A004FEF5A /* RedViewController.swift in Sources */,
+				200D639F2B05B1480045A5C1 /* Red.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

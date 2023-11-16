@@ -11,7 +11,7 @@ import UIKit
 // 메인 코디네이터가 Navigation와의 상호작용을 직접 감지하기 위해
 // UINavigationControllerDelegate 프로토콜 채택
 // 그리고 이를 채택하기 위한 NSObject 상속
-class MainCoordinator: NSObject, Coordinator {
+class MainCoordinator: NSObject, Coordinator, Red, Blue {
     var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
     
