@@ -9,6 +9,7 @@ import UIKit
 
 class BlueViewController: UIViewController {
     weak var coordinator: MainCoordinator?
+    var selectedProduct = Int.max
     
     override func viewDidLoad() {
         view.backgroundColor = .blue

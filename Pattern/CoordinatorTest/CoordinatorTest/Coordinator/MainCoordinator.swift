@@ -35,8 +35,9 @@ class MainCoordinator: NSObject, Coordinator {
         child.start()
     }
     
-    func goToBlueVC() {
+    func goToBlueVC(to productType: Int) {
         let vc = BlueViewController()
+        vc.selectedProduct = productType
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: false)
     }

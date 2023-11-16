@@ -24,6 +24,16 @@ class MainViewController: UIViewController {
         
         return button
     }()
+    private let segmentedControl: UISegmentedControl = {
+        let seg = UISegmentedControl()
+        seg.backgroundColor = .green
+        seg.insertSegment(withTitle: "Segment 1", at: 0, animated: false)
+        seg.insertSegment(withTitle: "Segment 2", at: 1, animated: false)
+        seg.selectedSegmentIndex = 0
+        
+        return seg
+    }()
+    
     weak var coordinator: MainCoordinator?
     
     override func viewDidLoad() {
@@ -38,21 +48,25 @@ class MainViewController: UIViewController {
     }
     
     @objc func blueTap() {
-        coordinator?.goToBlueVC()
+        coordinator?.goToBlueVC(to: segmentedControl.selectedSegmentIndex)
     }
     
     private func configureUI() {
         view.addSubview(redButton)
         view.addSubview(blueButton)
+        view.addSubview(segmentedControl)
         
         redButton.translatesAutoresizingMaskIntoConstraints = false
         blueButton.translatesAutoresizingMaskIntoConstraints = false
+        segmentedControl.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             redButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             redButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
             blueButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             blueButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
+            segmentedControl.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            segmentedControl.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50)
         ])
     }
 }
