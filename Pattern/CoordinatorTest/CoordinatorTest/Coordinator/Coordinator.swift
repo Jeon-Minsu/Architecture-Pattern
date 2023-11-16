@@ -7,7 +7,11 @@
 
 import UIKit
 
-protocol Coordinator {
+
+// '===' 연산자 사용은 클래스에서만 가능
+// 이론상 Coordinator는 구조체로도 구현 가능하나
+// 여러 곳에서 공유되어야 하기 때문에 클래스로 구현
+protocol Coordinator: AnyObject {
     // 하위 코디네이터 저장
     var childCoordinators: [Coordinator] { get set }
     // ViewController를 표시하는 NavigationController를 저장

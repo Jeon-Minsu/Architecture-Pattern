@@ -8,9 +8,15 @@
 import UIKit
 
 class RedViewController: UIViewController {
-    weak var coordinator: MainCoordinator?
+    weak var coordinator: RedCoordinator?
     
     override func viewDidLoad() {
         view.backgroundColor = .red
     }
+    
+//    override func viewDidDisappear(_ animated: Bool) {
+//        super.viewDidDisappear(animated)
+//        
+//        coordinator?.didFinish()
+//    }
 }

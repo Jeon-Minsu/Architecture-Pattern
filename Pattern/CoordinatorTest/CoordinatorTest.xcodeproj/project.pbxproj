@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200D639C2B05979C0045A5C1 /* RedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D639B2B05979C0045A5C1 /* RedCoordinator.swift */; };
 		201DBF892B049BC2004FEF5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201DBF882B049BC2004FEF5A /* AppDelegate.swift */; };
 		201DBF8B2B049BC2004FEF5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201DBF8A2B049BC2004FEF5A /* SceneDelegate.swift */; };
 		201DBF8D2B049BC2004FEF5A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201DBF8C2B049BC2004FEF5A /* MainViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		200D639B2B05979C0045A5C1 /* RedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedCoordinator.swift; sourceTree = "<group>"; };
 		201DBF852B049BC2004FEF5A /* CoordinatorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		201DBF882B049BC2004FEF5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		201DBF8A2B049BC2004FEF5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		200D63972B05975E0045A5C1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				201DBF882B049BC2004FEF5A /* AppDelegate.swift */,
+				201DBF8A2B049BC2004FEF5A /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		200D63982B05976B0045A5C1 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				201DBF912B049BC3004FEF5A /* Assets.xcassets */,
+				201DBF932B049BC3004FEF5A /* LaunchScreen.storyboard */,
+				201DBF962B049BC3004FEF5A /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		200D63992B0597820045A5C1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				201DBF8C2B049BC2004FEF5A /* MainViewController.swift */,
+				201DBFBC2B04A29A004FEF5A /* RedViewController.swift */,
+				201DBFBE2B04A2B5004FEF5A /* BlueViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		200D639A2B0597890045A5C1 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				201DBFB82B049BF7004FEF5A /* Coordinator.swift */,
+				201DBFBA2B049F1B004FEF5A /* MainCoordinator.swift */,
+				200D639B2B05979C0045A5C1 /* RedCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		201DBF7C2B049BC2004FEF5A = {
 			isa = PBXGroup;
 			children = (
@@ -97,16 +138,10 @@
 		201DBF872B049BC2004FEF5A /* CoordinatorTest */ = {
 			isa = PBXGroup;
 			children = (
-				201DBF882B049BC2004FEF5A /* AppDelegate.swift */,
-				201DBF8A2B049BC2004FEF5A /* SceneDelegate.swift */,
-				201DBF8C2B049BC2004FEF5A /* MainViewController.swift */,
-				201DBFBC2B04A29A004FEF5A /* RedViewController.swift */,
-				201DBFBE2B04A2B5004FEF5A /* BlueViewController.swift */,
-				201DBFB82B049BF7004FEF5A /* Coordinator.swift */,
-				201DBFBA2B049F1B004FEF5A /* MainCoordinator.swift */,
-				201DBF912B049BC3004FEF5A /* Assets.xcassets */,
-				201DBF932B049BC3004FEF5A /* LaunchScreen.storyboard */,
-				201DBF962B049BC3004FEF5A /* Info.plist */,
+				200D63972B05975E0045A5C1 /* Application */,
+				200D63982B05976B0045A5C1 /* Resource */,
+				200D639A2B0597890045A5C1 /* Coordinator */,
+				200D63992B0597820045A5C1 /* ViewController */,
 			);
 			path = CoordinatorTest;
 			sourceTree = "<group>";
@@ -247,6 +282,7 @@
 				201DBF892B049BC2004FEF5A /* AppDelegate.swift in Sources */,
 				201DBFBB2B049F1B004FEF5A /* MainCoordinator.swift in Sources */,
 				201DBF8B2B049BC2004FEF5A /* SceneDelegate.swift in Sources */,
+				200D639C2B05979C0045A5C1 /* RedCoordinator.swift in Sources */,
 				201DBFBD2B04A29A004FEF5A /* RedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,7 +455,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CoordinatorTest/Info.plist;
+				INFOPLIST_FILE = CoordinatorTest/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -447,7 +483,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CoordinatorTest/Info.plist;
+				INFOPLIST_FILE = CoordinatorTest/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
