@@ -8,7 +8,7 @@
 import UIKit
 
 class MainViewController: UIViewController {
-    private let redButton: UIButton = {
+    private lazy var redButton: UIButton = {
         let button = UIButton()
         button.setTitle("Red", for: .normal)
         button.setTitleColor(.red, for: .normal)
@@ -16,7 +16,7 @@ class MainViewController: UIViewController {
         
         return button
     }()
-    private let blueButton: UIButton = {
+    private lazy var blueButton: UIButton = {
         let button = UIButton()
         button.setTitle("Blue", for: .normal)
         button.setTitleColor(.blue, for: .normal)
