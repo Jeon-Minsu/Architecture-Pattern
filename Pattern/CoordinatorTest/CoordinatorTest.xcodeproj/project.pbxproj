@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		200D639C2B05979C0045A5C1 /* RedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D639B2B05979C0045A5C1 /* RedCoordinator.swift */; };
-		200D639F2B05B1480045A5C1 /* Red.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D639E2B05B1480045A5C1 /* Red.swift */; };
-		200D63A12B05B1810045A5C1 /* Blue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D63A02B05B1810045A5C1 /* Blue.swift */; };
+		200D639C2B05979C0045A5C1 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D639B2B05979C0045A5C1 /* LoginCoordinator.swift */; };
 		201DBF892B049BC2004FEF5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201DBF882B049BC2004FEF5A /* AppDelegate.swift */; };
 		201DBF8B2B049BC2004FEF5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201DBF8A2B049BC2004FEF5A /* SceneDelegate.swift */; };
-		201DBF8D2B049BC2004FEF5A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201DBF8C2B049BC2004FEF5A /* MainViewController.swift */; };
+		201DBF8D2B049BC2004FEF5A /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201DBF8C2B049BC2004FEF5A /* LogoutViewController.swift */; };
 		201DBF922B049BC3004FEF5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 201DBF912B049BC3004FEF5A /* Assets.xcassets */; };
 		201DBF952B049BC3004FEF5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 201DBF932B049BC3004FEF5A /* LaunchScreen.storyboard */; };
-		201DBFB92B049BF7004FEF5A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201DBFB82B049BF7004FEF5A /* Coordinator.swift */; };
-		201DBFBB2B049F1B004FEF5A /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201DBFBA2B049F1B004FEF5A /* MainCoordinator.swift */; };
-		201DBFBD2B04A29A004FEF5A /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201DBFBC2B04A29A004FEF5A /* RedViewController.swift */; };
-		201DBFBF2B04A2B5004FEF5A /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201DBFBE2B04A2B5004FEF5A /* BlueViewController.swift */; };
+		201DBFB92B049BF7004FEF5A /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201DBFB82B049BF7004FEF5A /* CoordinatorProtocol.swift */; };
+		201DBFBB2B049F1B004FEF5A /* LogoutCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201DBFBA2B049F1B004FEF5A /* LogoutCoordinator.swift */; };
+		201DBFBD2B04A29A004FEF5A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201DBFBC2B04A29A004FEF5A /* LoginViewController.swift */; };
+		206D54BE2B158CEE00F4FF7F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206D54BD2B158CEE00F4FF7F /* AppCoordinator.swift */; };
+		206D54C02B158CFE00F4FF7F /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206D54BF2B158CFE00F4FF7F /* BaseCoordinator.swift */; };
+		206D54C22B15BACF00F4FF7F /* LoginViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206D54C12B15BACF00F4FF7F /* LoginViewControllerDelegate.swift */; };
+		206D54C52B15C39400F4FF7F /* LoginCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206D54C42B15C39400F4FF7F /* LoginCoordinatorProtocol.swift */; };
+		206D54C72B15C68000F4FF7F /* LoginCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206D54C62B15C68000F4FF7F /* LoginCoordinatorDelegate.swift */; };
+		206D54C92B15D28B00F4FF7F /* LogoutViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206D54C82B15D28B00F4FF7F /* LogoutViewControllerDelegate.swift */; };
+		206D54CB2B15D2F800F4FF7F /* LogoutCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206D54CA2B15D2F800F4FF7F /* LogoutCoordinatorProtocol.swift */; };
+		206D54CD2B15D31E00F4FF7F /* LogoutCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206D54CC2B15D31E00F4FF7F /* LogoutCoordinatorDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,22 +44,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		200D639B2B05979C0045A5C1 /* RedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedCoordinator.swift; sourceTree = "<group>"; };
-		200D639E2B05B1480045A5C1 /* Red.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Red.swift; sourceTree = "<group>"; };
-		200D63A02B05B1810045A5C1 /* Blue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blue.swift; sourceTree = "<group>"; };
+		200D639B2B05979C0045A5C1 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		201DBF852B049BC2004FEF5A /* CoordinatorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		201DBF882B049BC2004FEF5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		201DBF8A2B049BC2004FEF5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		201DBF8C2B049BC2004FEF5A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		201DBF8C2B049BC2004FEF5A /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		201DBF912B049BC3004FEF5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		201DBF942B049BC3004FEF5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		201DBF962B049BC3004FEF5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		201DBF9B2B049BC3004FEF5A /* CoordinatorTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoordinatorTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		201DBFA52B049BC3004FEF5A /* CoordinatorTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoordinatorTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		201DBFB82B049BF7004FEF5A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		201DBFBA2B049F1B004FEF5A /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
-		201DBFBC2B04A29A004FEF5A /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
-		201DBFBE2B04A2B5004FEF5A /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		201DBFB82B049BF7004FEF5A /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		201DBFBA2B049F1B004FEF5A /* LogoutCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutCoordinator.swift; sourceTree = "<group>"; };
+		201DBFBC2B04A29A004FEF5A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		206D54BD2B158CEE00F4FF7F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		206D54BF2B158CFE00F4FF7F /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		206D54C12B15BACF00F4FF7F /* LoginViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerDelegate.swift; sourceTree = "<group>"; };
+		206D54C42B15C39400F4FF7F /* LoginCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		206D54C62B15C68000F4FF7F /* LoginCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		206D54C82B15D28B00F4FF7F /* LogoutViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewControllerDelegate.swift; sourceTree = "<group>"; };
+		206D54CA2B15D2F800F4FF7F /* LogoutCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		206D54CC2B15D31E00F4FF7F /* LogoutCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutCoordinatorDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +114,8 @@
 		200D63992B0597820045A5C1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				201DBF8C2B049BC2004FEF5A /* MainViewController.swift */,
-				201DBFBC2B04A29A004FEF5A /* RedViewController.swift */,
-				201DBFBE2B04A2B5004FEF5A /* BlueViewController.swift */,
+				201DBFBC2B04A29A004FEF5A /* LoginViewController.swift */,
+				201DBF8C2B049BC2004FEF5A /* LogoutViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -114,8 +123,10 @@
 		200D639A2B0597890045A5C1 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				201DBFBA2B049F1B004FEF5A /* MainCoordinator.swift */,
-				200D639B2B05979C0045A5C1 /* RedCoordinator.swift */,
+				206D54C32B15C05100F4FF7F /* Common */,
+				206D54BD2B158CEE00F4FF7F /* AppCoordinator.swift */,
+				200D639B2B05979C0045A5C1 /* LoginCoordinator.swift */,
+				201DBFBA2B049F1B004FEF5A /* LogoutCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -123,9 +134,13 @@
 		200D639D2B05B1380045A5C1 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				201DBFB82B049BF7004FEF5A /* Coordinator.swift */,
-				200D639E2B05B1480045A5C1 /* Red.swift */,
-				200D63A02B05B1810045A5C1 /* Blue.swift */,
+				206D54CE2B15D5EB00F4FF7F /* Common */,
+				206D54C62B15C68000F4FF7F /* LoginCoordinatorDelegate.swift */,
+				206D54C42B15C39400F4FF7F /* LoginCoordinatorProtocol.swift */,
+				206D54C12B15BACF00F4FF7F /* LoginViewControllerDelegate.swift */,
+				206D54CC2B15D31E00F4FF7F /* LogoutCoordinatorDelegate.swift */,
+				206D54CA2B15D2F800F4FF7F /* LogoutCoordinatorProtocol.swift */,
+				206D54C82B15D28B00F4FF7F /* LogoutViewControllerDelegate.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -158,6 +173,22 @@
 				200D63992B0597820045A5C1 /* ViewController */,
 			);
 			path = CoordinatorTest;
+			sourceTree = "<group>";
+		};
+		206D54C32B15C05100F4FF7F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				206D54BF2B158CFE00F4FF7F /* BaseCoordinator.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		206D54CE2B15D5EB00F4FF7F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				201DBFB82B049BF7004FEF5A /* CoordinatorProtocol.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,16 +321,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				201DBFBF2B04A2B5004FEF5A /* BlueViewController.swift in Sources */,
-				201DBFB92B049BF7004FEF5A /* Coordinator.swift in Sources */,
-				201DBF8D2B049BC2004FEF5A /* MainViewController.swift in Sources */,
+				206D54BE2B158CEE00F4FF7F /* AppCoordinator.swift in Sources */,
+				206D54C72B15C68000F4FF7F /* LoginCoordinatorDelegate.swift in Sources */,
+				206D54CB2B15D2F800F4FF7F /* LogoutCoordinatorProtocol.swift in Sources */,
+				201DBFB92B049BF7004FEF5A /* CoordinatorProtocol.swift in Sources */,
+				201DBF8D2B049BC2004FEF5A /* LogoutViewController.swift in Sources */,
 				201DBF892B049BC2004FEF5A /* AppDelegate.swift in Sources */,
-				201DBFBB2B049F1B004FEF5A /* MainCoordinator.swift in Sources */,
+				201DBFBB2B049F1B004FEF5A /* LogoutCoordinator.swift in Sources */,
 				201DBF8B2B049BC2004FEF5A /* SceneDelegate.swift in Sources */,
-				200D639C2B05979C0045A5C1 /* RedCoordinator.swift in Sources */,
-				200D63A12B05B1810045A5C1 /* Blue.swift in Sources */,
-				201DBFBD2B04A29A004FEF5A /* RedViewController.swift in Sources */,
-				200D639F2B05B1480045A5C1 /* Red.swift in Sources */,
+				206D54C02B158CFE00F4FF7F /* BaseCoordinator.swift in Sources */,
+				206D54CD2B15D31E00F4FF7F /* LogoutCoordinatorDelegate.swift in Sources */,
+				200D639C2B05979C0045A5C1 /* LoginCoordinator.swift in Sources */,
+				201DBFBD2B04A29A004FEF5A /* LoginViewController.swift in Sources */,
+				206D54C52B15C39400F4FF7F /* LoginCoordinatorProtocol.swift in Sources */,
+				206D54C22B15BACF00F4FF7F /* LoginViewControllerDelegate.swift in Sources */,
+				206D54C92B15D28B00F4FF7F /* LogoutViewControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
